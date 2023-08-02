@@ -8,6 +8,7 @@ import Link from "next/link";
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
+  const user = useUser() 
   return (
     <>
       <Head>
